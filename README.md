@@ -10,8 +10,5 @@
 - DOM updates and event handling in JS
 - Game logic and UI design basics
 
-## Demo
-(Live [GitHub Pages](https://pages.github.com/) link, if you deploy)
-
 ## Source Code
-[GitHub Repo link]
+https://github.com/bhargav31767/PRODIGY_WD_03.git
