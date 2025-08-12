@@ -1,0 +1,80 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #06beb6 0%, #fd7e14 100%);
+  color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: rgba(255,255,255,0.90);
+  padding: 32px 32px 24px 32px;
+  border-radius: 30px;
+  box-shadow: 
+    0 8px 32px rgba(6, 190, 182, 0.22),
+    0 1.5px 8px rgba(253, 126, 20, 0.10);
+  text-align: center;
+  backdrop-filter: blur(2px);
+}
+
+h1 {
+  color: #fd7e14;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-template-rows: repeat(3, 70px);
+  gap: 8px;
+  margin: 25px auto 14px auto;
+  justify-content: center;
+}
+
+.cell {
+  background: #f3f6fd;
+  border-radius: 18px;
+  box-shadow: 0 2px 8px rgba(6, 190, 182, 0.10);
+  width: 70px;
+  height: 70px;
+  font-size: 2rem;
+  color: #fd7e14;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s, color 0.2s;
+}
+
+.cell:hover {
+  background: #d7fdec;
+  color: #06beb6;
+}
+
+.restart-btn {
+  background: #06beb6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: background 0.2s;
+}
+
+.restart-btn:hover {
+  background: #fd7e14;
+}
+
+#game-info {
+  font-size: 1.08rem;
+  color: #4b4b4b;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  min-height: 24px;
+}
